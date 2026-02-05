@@ -48,17 +48,13 @@ int main(){
     const int N = 5000;
     vector<int> arrs = readArrayFromFile();
 
-    /* srand(time(nullptr));
-
-    for (int i = 0; i < N; i++) {
-        arr[i] = rand() % 100000; // random numbers [0, 99999]
-    } */
-
     sortss a;
+
     auto start = std::chrono::high_resolution_clock::now();
     a.selectionSort(arrs);
     auto end = std::chrono::high_resolution_clock::now();
-    for(auto i : arrs) cout<<i<<" ";
+
+    // for(auto i : arrs) cout<<i<<" ";
 
     cout<<endl;
     std::chrono::duration<double> elapsed = end - start;

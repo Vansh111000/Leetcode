@@ -46,11 +46,12 @@ int main(){
     
 vector<int> arrs = readArrayFromFile();
     sorts a;
+
     auto start = std::chrono::high_resolution_clock::now();
     a.insertionSort(arrs);
     auto end = std::chrono::high_resolution_clock::now();
     
-    for(auto i : arrs) cout<<i<<" ";
+    // for(auto i : arrs) cout<<i<<" ";
     cout<<endl;
     std::chrono::duration<double> elapsed = end - start;
 
