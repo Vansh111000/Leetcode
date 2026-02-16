@@ -6,7 +6,7 @@
 using namespace std;
 
 int main() {
-    const int N = 5000;
+    const int N = 10000;
     ofstream out("array.txt");
 
     mt19937 rng(42);  // fixed seed → same input every time
